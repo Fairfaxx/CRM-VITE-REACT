@@ -13,6 +13,8 @@ import {
   action as editClientAction,
 } from './pages/EditClient';
 
+import { action as deleteExistingClientAction } from './components/Clients';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -36,6 +38,10 @@ const router = createBrowserRouter([
         loader: editClientLoader,
         action: editClientAction,
         errorElement: <ErrorPage />,
+      },
+      {
+        path: '/clients/:clientId/delete',
+        action: deleteExistingClientAction,
       },
     ],
   },
