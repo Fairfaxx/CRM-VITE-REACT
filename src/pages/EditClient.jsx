@@ -23,8 +23,7 @@ export async function loader({ params }) {
 
 export const action = async ({ request, params }) => {
   const formData = await request.formData();
-  const client = await getClientFromApi(params.clientId);
-  console.log(client);
+  // const client = await getClientFromApi(params.clientId);
 
   // A way to extract the form data
   const data = Object.fromEntries(formData);
@@ -46,7 +45,6 @@ export const action = async ({ request, params }) => {
   }
   // Return errors if there are any
   if (Object.keys(errors).length) return errors;
-  console.log(data);
 
   await EditExistingClient(params.clientId, data);
   return redirect('/');

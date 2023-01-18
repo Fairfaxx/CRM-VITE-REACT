@@ -1,28 +1,28 @@
 {
   "clients": [
     {
-      "name": "Pedro Alvarez",
-      "company": "Codigo Con Juan",
-      "email": "pedro@pedri.com",
-      "phone": "1157581199",
-      "notes": "s",
-      "id": 5
-    },
-    {
       "name": "Federico Lemaire",
-      "company": "Fairfaxx",
+      "company": "FairfaxxIT",
       "email": "fede.lemaire@gmail.com",
       "phone": "01157581195",
       "notes": "Hello",
       "id": 6
     },
     {
-      "name": "Luciana Loioco",
+      "name": "Luciana Lis Loioco",
       "company": "Pierpoint",
       "email": "luciana@loioco.com",
       "phone": "1124004784",
-      "notes": "Recruiting for Pierpoint",
+      "notes": "She rocks!",
       "id": 7
+    },
+    {
+      "name": "Patricio Lemaire",
+      "company": "Yoy",
+      "email": "patricio@yoy.com",
+      "phone": "1157581147",
+      "notes": "Le dicen Tito",
+      "id": 8
     }
   ]
 }

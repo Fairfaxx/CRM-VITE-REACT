@@ -26,7 +26,6 @@ export const action = async ({ request }) => {
   }
   // Return errors if there are any
   if (Object.keys(errors).length) return errors;
-  console.log(data);
 
   await addNewClient(data);
   return redirect('/');

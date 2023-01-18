@@ -44,3 +44,14 @@ export const EditExistingClient = async (id, client) => {
     console.log(error);
   }
 };
+
+export const deleteExistingClient = async (id) => {
+  try {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/${id}`, {
+      method: 'DELETE',
+    });
+    await response.json();
+  } catch (error) {
+    console.log(error);
+  }
+};
