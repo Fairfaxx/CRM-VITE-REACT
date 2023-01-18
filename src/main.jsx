@@ -23,6 +23,7 @@ const router = createBrowserRouter([
         path: '/clients/new',
         element: <NewClient />,
         action: NewClientAction,
+        errorElement: <ErrorPage />,
       },
     ],
   },

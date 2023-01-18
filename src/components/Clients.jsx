@@ -3,11 +3,7 @@ export const Clients = ({ client }) => {
     <>
       <tr className="border-b">
         <td className="p-6 space-y-2">
-          <b>{client.name.title}</b>
-          <p className="text-2xl text-gray-800">
-            {client.name.first} {client.name.last}
-          </p>
-          <img src={client.picture.thumbnail} />
+          <b>{client.name}</b>
         </td>
         <td className="p-6">
           <p className="text-gray-600">
@@ -19,8 +15,8 @@ export const Clients = ({ client }) => {
             {client.phone}
           </p>
           <p className="text-gray-600">
-            <span className="text-gray-800 uppercase font-bold">State: </span>
-            {client.location.state}
+            <span className="text-gray-800 uppercase font-bold">Company: </span>
+            {client.company}
           </p>
         </td>
         <td className="p-6 flex gap-3">
