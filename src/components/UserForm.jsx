@@ -11,6 +11,7 @@ const UserForm = ({ client }) => {
           className="mt-2 block w-full p-3 bg-gray-50"
           placeholder="Client's name"
           name="name"
+          defaultValue={client?.name}
         />
       </div>
       <div className="mb-4">
@@ -23,6 +24,7 @@ const UserForm = ({ client }) => {
           className="mt-2 block w-full p-3 bg-gray-50"
           placeholder="company name"
           name="company"
+          defaultValue={client?.company}
         />
       </div>
 
@@ -34,8 +36,9 @@ const UserForm = ({ client }) => {
           id="email"
           type="email"
           className="mt-2 block w-full p-3 bg-gray-50"
-          placeholder="Client's Email"
+          placeholder="client's Email"
           name="email"
+          defaultValue={client?.email}
         />
       </div>
 
@@ -49,6 +52,7 @@ const UserForm = ({ client }) => {
           className="mt-2 block w-full p-3 bg-gray-50"
           placeholder="phone number"
           name="phone"
+          defaultValue={client?.phone}
         />
       </div>
 
@@ -63,6 +67,7 @@ const UserForm = ({ client }) => {
           className="mt-2 block w-full p-3 bg-gray-50 h-40 align-self"
           placeholder="notes"
           name="notes"
+          defaultValue={client?.notes}
         />
       </div>
     </>
