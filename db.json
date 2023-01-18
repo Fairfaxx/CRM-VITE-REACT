@@ -1,11 +1,12 @@
 {
   "clients": [
     {
-      "id": 5,
-      "name": "Pedro",
-      "phone": 1398198938,
-      "email": "pedro@juan.com",
-      "company": "Codigo Con Juan"
+      "name": "Pedro Alvarez",
+      "company": "Codigo Con Juan",
+      "email": "pedro@pedri.com",
+      "phone": "1157581199",
+      "notes": "s",
+      "id": 5
     },
     {
       "name": "Federico Lemaire",
@@ -16,7 +17,7 @@
       "id": 6
     },
     {
-      "name": "Luli Loioco",
+      "name": "Luciana Loioco",
       "company": "Pierpoint",
       "email": "luciana@loioco.com",
       "phone": "1124004784",

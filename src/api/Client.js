@@ -5,6 +5,13 @@ export const getClientsFromApi = async () => {
   return clients;
 };
 
+export const getClientFromApi = async (id) => {
+  const resp = await fetch(`${import.meta.env.VITE_API_URL}/${id}`);
+  const result = await resp.json();
+  const clients = result;
+  return clients;
+};
+
 export const addNewClient = async (data) => {
   try {
     const response = await fetch(`${import.meta.env.VITE_API_URL}`, {
@@ -19,5 +26,21 @@ export const addNewClient = async (data) => {
     await response.json();
   } catch (err) {
     console.log(err);
+  }
+};
+
+export const EditExistingClient = async (id, client) => {
+  console.log(client);
+  try {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(client),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    await response.json();
+  } catch (error) {
+    console.log(error);
   }
 };

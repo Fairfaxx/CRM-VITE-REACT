@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 export const Clients = ({ client }) => {
+  const navigate = useNavigate();
   return (
     <>
       <tr className="border-b">
@@ -23,6 +26,7 @@ export const Clients = ({ client }) => {
           <button
             type="button"
             className="text-blue-600 hover:text-blue-700 uppercase font-bold text-xs"
+            onClick={() => navigate(`/clients/${client.id}/edit`)}
           >
             Edit
           </button>
