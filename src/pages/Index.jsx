@@ -1,10 +1,9 @@
 import { useLoaderData } from 'react-router-dom';
 import { Clients } from '../components/Clients';
+import { getClientsFromApi } from '../api/Client';
 
 export const loader = async () => {
-  const resp = await fetch('https://randomuser.me/api/?results=500');
-  const data = await resp.json();
-  const clients = data.results;
+  const clients = getClientsFromApi();
 
   return clients;
 };
