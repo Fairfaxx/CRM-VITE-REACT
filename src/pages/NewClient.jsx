@@ -1,6 +1,7 @@
-import { useNavigate, Form, useActionData } from 'react-router-dom';
+import { useNavigate, Form, useActionData, redirect } from 'react-router-dom';
 import { Errors } from '../components/Errors';
 import UserForm from '../components/UserForm';
+import { addNewClient } from '../api/Client';
 
 export const action = async ({ request }) => {
   const formData = await request.formData();
@@ -25,6 +26,10 @@ export const action = async ({ request }) => {
   }
   // Return errors if there are any
   if (Object.keys(errors).length) return errors;
+  console.log(data);
+
+  await addNewClient(data);
+  return redirect('/');
 };
 
 export const NewClient = () => {

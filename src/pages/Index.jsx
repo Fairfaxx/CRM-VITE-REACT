@@ -27,7 +27,7 @@ export const Index = () => {
           </thead>
           <tbody>
             {clients.map((client) => (
-              <Clients key={client.login.uuid} client={client} />
+              <Clients key={client.id} client={client} />
             ))}
           </tbody>
         </table>

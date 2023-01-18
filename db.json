@@ -1,26 +1,27 @@
 {
   "clients": [
     {
-      "name": {
-        "title": "Mr",
-        "first": "Alvar",
-        "last": "Vika"
-      },
-        "location": {
-          "city": "Ballangen",
-          "state": "Vestfold",
-          "country": "Norway",
-          "description": "Central Time (US & Canada), Mexico City"
-        },
-        "email": "shyl.mwswy@example.com",
-
-        "login": {
-          "uuid": "7a0ec1d8-e7fd-466d-b185-3324cce56f48"
-        }, 
-        "phone": "078-83392595",
-        "picture": {
-          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/50.jpg"
-          }
-      }
+      "id": 5,
+      "name": "Pedro",
+      "phone": 1398198938,
+      "email": "pedro@juan.com",
+      "company": "Codigo Con Juan"
+    },
+    {
+      "name": "Federico Lemaire",
+      "company": "Fairfaxx",
+      "email": "fede.lemaire@gmail.com",
+      "phone": "01157581195",
+      "notes": "Hello",
+      "id": 6
+    },
+    {
+      "name": "Luli Loioco",
+      "company": "Pierpoint",
+      "email": "luciana@loioco.com",
+      "phone": "1124004784",
+      "notes": "Recruiting for Pierpoint",
+      "id": 7
+    }
   ]
 }
